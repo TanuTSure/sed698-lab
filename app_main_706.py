@@ -98,10 +98,7 @@ with tab2:
                y =  evaluations.loc['AdaBoost']),
         px.Bar(name = 'XGBoost',
                x = x,
-               y =  evaluations.loc['XGBoost']),
-        px.Bar(name = 'Ellipsis',
-               x = x,
-               y =  evaluations.iloc[5])   
+               y =  evaluations.loc['XGBoost'])
     ])
     st.plotly_chart(fig, use_container_width=True)
 
